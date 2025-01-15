@@ -1,85 +1,84 @@
-/* Basic styling for the login page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Style for the Login Page */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #00bcd4, #00796b);
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1; /* Light teal background for the entire page */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .login-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-box {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 300px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light border for better definition */
 }
 
-h2 {
-    font-size: 24px;
+h1 {
+    font-size: 26px;
+    color: #4CAF50; /* Green color for title */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group {
     margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
     color: #333;
+    margin-bottom: 8px;
 }
 
-.textbox {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.textbox input {
+.input-group input {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #00796b;
-    border-radius: 4px;
-    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Soft background for input */
+}
+
+.input-group input:focus {
     outline: none;
-    transition: all 0.3s ease;
+    border-color: #4CAF50; /* Green border on focus */
+    background-color: #eafaf1; /* Light green background on focus */
 }
 
-.textbox input:focus {
-    border-color: #00bcd4;
-}
-
-input[type="submit"] {
-    background-color: #00796b;
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50; /* Green button */
     color: white;
     border: none;
-    padding: 10px;
-    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #00bcd4;
+.login-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 p {
-    margin-top: 15px;
-    color: #333;
-}
-
-a {
-    color: #00796b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    font-size: 14px;
+    color: #666; /* Subtle text color */
 }
