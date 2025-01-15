@@ -1,13 +1,19 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form submission
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    // Checking for hardcoded username and password
-    if (username === "user" && password === "pass") {
-        window.location.href = "./gittest/index.html"; // Redirect to Task Manager page
+    // Hardcoded username and password (you can modify these)
+    const correctUsername = 'user';
+    const correctPassword = 'pass';
+
+    // Check if credentials are correct
+    if (username === correctUsername && password === correctPassword) {
+        // Redirect to the Task Manager page
+        window.location.href = "index.html"; // Adjust the path as needed
     } else {
-        alert("Invalid credentials! Please try again.");
+        // Show error message
+        document.getElementById('error-message').textContent = "Invalid username or password.";
     }
 });
